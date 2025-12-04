@@ -8,6 +8,7 @@
     "start": "node dist/app/server/server.js"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.943.0",
     "@sentry/node": "^10.28.0",
     "@sentry/profiling-node": "^10.28.0",
     "@sentry/tracing": "^7.120.4",
@@ -16,9 +17,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.19.2",
-    "jsonwebtoken": "^9.0.2",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.0.0",
     "morgan": "^1.10.1",
+    "multer": "^2.0.2",
     "nodemailer": "^7.0.11",
     "resend": "^6.5.2",
     "winston": "^3.18.3",
@@ -26,9 +28,11 @@
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
     "@types/express": "^4.17.25",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.0.0",
     "@types/node": "^20.11.20",
     "nodemon": "^3.0.1",
     "ts-node-dev": "^2.0.0",
